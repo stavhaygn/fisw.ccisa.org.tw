@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg width="76" height="76" enable-background="new 0 0 1190.6 1683.8" version="1.1" viewBox="0 0 76 76" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+   <style type="text/css">
+   material412{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+   <linearGradient id="material4SVGID_1" x1="-43.717" x2="32.732" y1="142.09" y2="142.09" gradientTransform="matrix(-.63496 -.76567 .76567 -.63496 -74.284 124.05)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0ff" offset=".0068376"/>
+      <stop stop-color="#92278E" offset=".9974"/>
+   </linearGradient>
+   <circle class="material422" cx="38" cy="38" r="38" fill="url(#material4SVGID_1)" style="opacity:0.35" stroke-width=".99476"/>
+</svg>

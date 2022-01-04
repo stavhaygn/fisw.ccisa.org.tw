@@ -1,0 +1,51 @@
+[
+  {
+    "text": "最新消息",
+    "link": "/news/"
+  },
+  {
+    "text": "師資陣容",
+    "link": "/teacher"
+  },
+  {
+    "text": "活動議程",
+    "link": "/agendas/0118"
+  },
+  {
+    "text": "活動報名",
+    "link": "/signUp"
+  },
+  {
+    "text": "錄取名單",
+    "link": "/admissionList"
+  },
+  {
+    "text": "交通資訊",
+    "link": "/traffic"
+  },
+  {
+    "text": "合作夥伴",
+    "link": "/partner"
+  },
+  {
+    "text": "活動花絮",
+    "link": "/scene"
+  },
+  {
+    "text": "保留",
+    "dropdown": [
+      {
+        "text": "子項目1",
+        "link": "/"
+      },
+      {
+        "text": "子項目2",
+        "link": "/"
+      },
+      {
+        "text": "子項目3",
+        "link": "/"
+      }
+    ]
+  }
+]
