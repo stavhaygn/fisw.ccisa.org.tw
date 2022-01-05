@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from 'react';
-import { jsx } from '@emotion/react';
+import { jsx, keyframes } from '@emotion/react';
 import tw, { css } from 'twin.macro';
 import Layout from '../components/layout/Layout';
 import Seo from '../components/Seo';
@@ -9,11 +9,55 @@ import Banner from '../assets/Banner.svg';
 import CCISA from '../assets/CCISA.svg';
 import Column from '../components/Column';
 import Row from '../components/Row';
+import BlankA from '../components/BlankA';
+
+// https://codepen.io/nxworld/pen/OyRrGy
+const ScrollDown = () => (
+  <span
+    css={[
+      tw`absolute inset-x-2/4 w-10 h-10 border-l-2 border-b-2 border-white -rotate-45 box-border`,
+      css`
+        top: -13rem;
+        animation: ${keyframes`
+      0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+      }
+    
+    `} 1.5s infinite;
+      `,
+    ]}
+  />
+);
 
 const IndexPage = () => (
   <Layout dark>
     <Seo title="首頁" />
-    <Banner tw="w-full" viewBox="130 -7 1660 820" />
+    <div tw="relative">
+      <Banner tw="w-full" viewBox="130 -7 1660 820" />
+      <BlankA
+        css={[
+          tw`absolute w-1/6 h-1/6`,
+          css`
+            top: 41.5%;
+            left: 41.5%;
+          `,
+        ]}
+        href="https://docs.google.com/forms/d/e/1FAIpQLSc9uG0jtzjETkFry1dcmFJoPJrJEbH2JR30tWs2papQwKjMdQ/viewform"
+      />
+    </div>
+    <div tw="relative">
+      <a href="#about">
+        <ScrollDown />
+      </a>
+    </div>
     <div tw="hidden md:block md:fixed md:inset-y-1/2 md:right-0 md:w-10 md:h-32 md:bg-white">
       <a
         css={[
@@ -29,12 +73,10 @@ const IndexPage = () => (
       </a>
       <div
         css={[
+          tw`w-0 h-0 border-solid`,
           css`
-            width: 0;
-            height: 0;
-            border-style: solid;
             border-width: 0 3rem 2.5rem 0;
-            border-color: transparent #ffffff transparent transparent;
+            border-color: transparent white transparent transparent;
           `,
         ]}
       />
@@ -45,7 +87,7 @@ const IndexPage = () => (
           <div tw="hidden md:block md:w-2/5">
             <CCISA tw="w-3/5 mx-auto" />
           </div>
-          <div tw="w-full md:w-3/5 md:text-lg md:pl-6">
+          <div tw="w-full md:w-3/5 md:text-lg md:pl-6" id="about">
             <h1 tw="text-center text-2xl md:py-3 md:text-left md:text-3xl ">
               — 活動緣起與目的 —
             </h1>
