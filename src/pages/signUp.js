@@ -6,6 +6,7 @@ import Page from '../components/layout/Page';
 import Column from '../components/Column';
 import SubTitle from '../components/SubTitle';
 import BlankA from '../components/BlankA';
+import PageBanner from '../components/PageBanner';
 
 const StyledList = tw.li`mb-3 text-lg`;
 const StyledUl = tw.ul`list-inside list-none`;
@@ -16,6 +17,7 @@ const StyledTh = tw.th`py-1 px-1 border-2 border-gray-500 text-lg md:py-4 md:px-
 
 const SignUpPage = () => (
   <Page title="活動報名">
+    <PageBanner />
     <Column>
       <SubTitle>報名審核標準</SubTitle>
       <StyledUl>

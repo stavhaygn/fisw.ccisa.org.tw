@@ -1,7 +1,7 @@
 import tw from 'twin.macro';
-const textColors = {
+const fontColors = {
   dark: tw`text-dark`,
   white: tw`text-white`,
 };
 
-export default textColors;
+export default fontColors;

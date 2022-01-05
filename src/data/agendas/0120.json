@@ -1,29 +1,42 @@
 {
   "date": "0120",
-  "text": "01/20(四)",
+  "text": "111/01/20",
+  "day": "(四)",
+  "linkColor": "#2f91d0",
   "thead": [
     {
       "headers": [
         {
           "text": "2022 年 01 月 20 日(星期四)",
-          "colSpan": "3"
+          "colSpan": "3",
+          "bold": "",
+          "fontSize": "xl",
+          "fontColor": "white",
+          "color": ""
         }
       ],
-      "color": "secondary"
+      "color": "gray-800"
     },
     {
       "headers": [
-        { "text": "時間" },
-        { "text": "內容" },
-        { "text": "講師/貴賓" }
+        { "text": "時間", "fontSize": "xl" },
+        { "text": "內容", "fontSize": "xl" },
+        { "text": "講師/貴賓", "fontSize": "xl" }
       ],
-      "color": "primary"
+      "color": "gray-200"
     }
   ],
   "tbody": [
     {
       "details": [
-        { "text": "09:00-09:50" },
+        {
+          "text": "09:00-09:50",
+          "colSpan": "",
+          "rowSpan": "",
+          "bold": "",
+          "fontSize": "",
+          "fontColor": ""
+        },
         { "text": "資安、支安" },
         { "text": "官哲弘 副總經理(普鴻資訊股份有限公司)" }
       ]
@@ -47,9 +60,9 @@
     {
       "details": [
         { "text": "12:00" },
-        { "text": "圓滿閉幕", "colSpan": "2", "bold": true }
+        { "text": "圓滿閉幕", "colSpan": "2", "fontSize": "xl" }
       ],
-      "color": "primary"
+      "color": "gray-200"
     }
   ]
 }

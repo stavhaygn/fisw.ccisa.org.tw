@@ -6,8 +6,10 @@ module.exports = {
         999: '999',
       },
       colors: {
-        primary: '#0fffff',
+        // primary: '0fffff',
+        primary: '#161098',
         secondary: '#93278f',
+        light: '#0fffff',
         dark: '#231816',
       },
     },

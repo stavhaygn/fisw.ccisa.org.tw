@@ -27,8 +27,9 @@ const colors = {
       transparent 150%
     );
   `,
-  'gray-800': tw`bg-gray-800`,
   'gray-100': tw`bg-gray-100`,
+  'gray-200': tw`bg-gray-200`,
+  'gray-800': tw`bg-gray-800`,
 };
 
 export default colors;

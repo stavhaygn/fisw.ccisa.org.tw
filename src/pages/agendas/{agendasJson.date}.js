@@ -10,16 +10,27 @@ import Table from '../../components/Table';
 
 const DateButtonGroup = ({ selectedDay, nodes = [] }) => (
   <div tw="inline-flex my-4">
-    {nodes.map(({ date, text }) => (
+    {nodes.map(({ date, text, day, linkColor }) => (
       <>
         <Link
           css={[
-            tw`py-2 px-4 mx-3 mb-3 text-xl border-2 border-gray-700 hover:border-white md:text-3xl `,
-            selectedDay === date ? tw`bg-secondary` : tw`bg-dark`,
+            tw`inline-flex items-center py-2 px-4 mx-3 mb-3 rounded-lg text-lg border-2 md:text-2xl`,
+            css`
+              color: ${linkColor};
+              color: black;
+              background-color: #f7f8f8;
+              border-color: ${linkColor};
+              &:hover {
+                color: white;
+                background-color: ${linkColor};
+              }
+            `,
+            // selectedDay === date ? tw`bg-secondary` : tw`bg-dark`,
           ]}
           to={`../${date}`}
         >
           <h2>{text}</h2>
+          <span tw="text-base">{day}</span>
         </Link>
       </>
     ))}
@@ -35,7 +46,7 @@ const AgendaPage = ({ data }) => (
       />
       <Table {...data.agendasJson} />
       <a
-        tw="mt-6 py-2 px-3 border-4 border-dark rounded-lg text-dark text-lg bg-primary hover:scale-105"
+        tw="mt-6 py-2 px-3 border-2 border-black rounded-lg text-white text-lg bg-[#AA4DB2] hover:scale-105"
         href="/documents/fisw2022_agenda.pdf"
         download
       >
@@ -55,7 +66,10 @@ export const query = graphql`
         headers {
           text
           colSpan
-          textColor
+          bold
+          fontSize
+          fontColor
+          color
         }
         color
       }
@@ -65,6 +79,8 @@ export const query = graphql`
           colSpan
           rowSpan
           bold
+          fontSize
+          fontColor
           color
         }
         color
@@ -74,6 +90,8 @@ export const query = graphql`
       nodes {
         date
         text
+        day
+        linkColor
       }
     }
   }

@@ -5,14 +5,10 @@ import tw from 'twin.macro';
 import Layout from './Layout';
 import Seo from '../Seo';
 import Container from '../Container';
+import BreadCrumb from '../BreadCrumb';
 
 const Title = ({ children }) => (
-  <>
-    <h1 tw="text-4xl block my-2 text-center md:my-6 md:text-7xl">{children}</h1>
-    {/* <span tw="block text-center font-thin md:text-2xl">
-      金融資安 / 數位人才 / 人才培育 / 永續發展
-    </span> */}
-  </>
+  <h1 tw="text-4xl block my-2 text-center md:my-6 md:text-6xl">{children}</h1>
 );
 
 const Page = ({ children, title, description }) => (
@@ -20,6 +16,7 @@ const Page = ({ children, title, description }) => (
     <Seo title={title} description={description}></Seo>
     <Container tw="mb-10">
       <Title>{title}</Title>
+      <BreadCrumb path={[title]} />
       {children}
     </Container>
   </Layout>

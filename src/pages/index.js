@@ -11,13 +11,13 @@ import Column from '../components/Column';
 import Row from '../components/Row';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout dark>
     <Seo title="首頁" />
-    <Banner tw="w-full" viewBox="0 0 1920 820" />
-    <div tw="hidden md:block md:fixed md:inset-y-1/2 md:right-0 md:w-10 md:h-32 md:bg-secondary">
+    <Banner tw="w-full" viewBox="130 -7 1660 820" />
+    <div tw="hidden md:block md:fixed md:inset-y-1/2 md:right-0 md:w-10 md:h-32 md:bg-white">
       <a
         css={[
-          tw`block h-full pl-2 pt-3 text-lg`,
+          tw`block h-full pl-2 pt-3 text-lg text-[#b79963]`,
           css`
             writing-mode: vertical-rl;
           `,
@@ -34,7 +34,7 @@ const IndexPage = () => (
             height: 0;
             border-style: solid;
             border-width: 0 3rem 2.5rem 0;
-            border-color: transparent #93278f transparent transparent;
+            border-color: transparent #ffffff transparent transparent;
           `,
         ]}
       />

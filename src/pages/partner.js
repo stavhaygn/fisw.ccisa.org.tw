@@ -9,6 +9,7 @@ import Column from '../components/Column';
 import Row from '../components/Row';
 import SubTitle from '../components/SubTitle';
 import BlankA from '../components/BlankA';
+import PageBanner from '../components/PageBanner';
 
 const PartnerCard = ({ name, image, href }) => (
   <div tw="max-w-xs my-4 mx-auto md:mx-0">
@@ -30,6 +31,7 @@ const PartnerPage = ({ data }) => {
   const { allOrganizersJson, allCoOrganizersJson } = data;
   return (
     <Page title="合作夥伴">
+      <PageBanner />
       <Column>
         <SubTitle tw="text-center">主辦單位</SubTitle>
         <Row tw="md:justify-center md:space-x-10">

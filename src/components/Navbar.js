@@ -10,15 +10,17 @@ import Dropdown from './Dropdown';
 import Logo from '../assets/Logo.svg';
 import LogoSponsor from '../assets/LogoSponsor.svg';
 
-const Nav = tw.nav`fixed top-0 left-0 right-0 z-50 py-3 border-b-2 border-primary bg-dark`;
+const Nav = tw.nav`fixed top-0 left-0 right-0 z-50 py-3 bg-dark`;
 
-const Container = tw(_Container)`flex flex-wrap justify-between items-center`;
+const Container = tw(
+  _Container,
+)`xl:w-11/12 flex flex-wrap justify-between items-center`;
 
 const NavLink = tw(
   Link,
-)`block py-3 pr-4 pl-3 border-t border-gray-700 text-white text-center hover:text-primary bg-transparent rounded 2xl:p-2 2xl:border-0`;
+)`block py-3 pr-4 pl-3 border-t border-gray-700 text-white text-center hover:text-light bg-transparent rounded 2xl:p-2 2xl:border-0`;
 
-const DropdownButton = tw.button`flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-white hover:text-primary border-b md:border-0 md:p-0 md:w-auto`;
+const DropdownButton = tw.button`flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-white hover:text-light border-b md:border-0 md:p-0 md:w-auto`;
 
 const DropdownDiv = tw.div`block w-auto px-0 text-base list-none bg-dark rounded divide-y divide-gray-100 shadow`;
 

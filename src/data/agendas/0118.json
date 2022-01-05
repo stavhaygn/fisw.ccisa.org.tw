@@ -1,26 +1,41 @@
 {
   "date": "0118",
-  "text": "01/18(二)",
+  "text": "111/01/18",
+  "day": "(二)",
+  "linkColor": "#2c5cb5",
   "thead": [
     {
       "headers": [
         {
           "text": "2022 年 01 月 18 日(星期二)",
           "colSpan": "3",
-          "textColor": ""
+          "bold": "",
+          "fontSize": "xl",
+          "fontColor": "white",
+          "color": ""
         }
       ],
-      "color": "secondary"
+      "color": "gray-800"
     },
     {
-      "headers": [{ "text": "時間" }, { "text": "內容", "colSpan": "2" }],
-      "color": "primary"
+      "headers": [
+        { "text": "時間", "fontSize": "xl" },
+        { "text": "內&emsp;&emsp;容", "colSpan": "2", "fontSize": "xl" }
+      ],
+      "color": "gray-200"
     }
   ],
   "tbody": [
     {
       "details": [
-        { "text": "08:30-09:00", "color": "" },
+        {
+          "text": "08:30-09:00",
+          "colSpan": "",
+          "rowSpan": "",
+          "bold": "",
+          "fontSize": "",
+          "fontColor": ""
+        },
         { "text": "報到/綜合研究大樓一樓(RB-102 國際會議廳)", "colSpan": "2" }
       ],
       "color": ""
@@ -28,8 +43,8 @@
     {
       "details": [
         { "text": "09:00-09:10", "rowSpan": "2" },
-        { "text": "內容" },
-        { "text": "講師/貴賓" }
+        { "text": "內容", "fontSize": "xl", "color": "gray-200" },
+        { "text": "講師/貴賓", "fontSize": "xl", "color": "gray-200" }
       ]
     },
     {
@@ -66,9 +81,9 @@
     {
       "details": [
         { "text": "12:00-13:00" },
-        { "text": "午餐", "colSpan": "2", "bold": true }
+        { "text": "午&emsp;&emsp;餐", "colSpan": "2", "fontSize": "xl" }
       ],
-      "color": "primary"
+      "color": "gray-200"
     },
     {
       "details": [

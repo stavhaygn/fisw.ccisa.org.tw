@@ -9,7 +9,7 @@ import SubTitle from '../components/SubTitle';
 import Material4 from '../assets/Material4.svg';
 
 const SplitLineTitle = ({ children }) => (
-  <div tw="relative mb-3 border-b border-white">
+  <div tw="relative mb-3 border-b border-black">
     <Material4
       css={[
         tw`absolute w-8`,

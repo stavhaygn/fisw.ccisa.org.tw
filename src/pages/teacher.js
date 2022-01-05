@@ -7,11 +7,13 @@ import Page from '../components/layout/Page';
 import Column from '../components/Column';
 import SubTitle from '../components/SubTitle';
 import Table from '../components/Table';
+import PageBanner from '../components/PageBanner';
 
 const StyledList = tw.li`text-center mb-3 text-lg`;
 
 const TeacherPage = ({ data }) => (
   <Page title="師資陣容">
+    <PageBanner />
     <Column>
       <SubTitle tw="text-center">主辦單位</SubTitle>
       <ul>
@@ -43,7 +45,8 @@ export const query = graphql`
         headers {
           text
           colSpan
-          textColor
+          fontSize
+          fontColor
         }
         color
       }

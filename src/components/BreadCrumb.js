@@ -8,7 +8,7 @@ const BreadcrumbItem = ({ children }) => (
   <li>
     <div tw="flex items-center">
       <VscChevronRight />
-      <span tw="ml-1 text-sm font-medium text-gray-500">{children}</span>
+      <span tw="ml-1 text-base font-medium text-gray-800">{children}</span>
     </div>
   </li>
 );
@@ -19,14 +19,15 @@ const BreadCrumb = ({ path = [] }) => (
       <li tw="inline-flex items-center">
         <Link
           to="/"
-          tw="inline-flex items-center text-sm text-gray-700 hover:text-gray-900"
+          tw="inline-flex items-center text-base text-gray-700 hover:text-primary"
         >
           <VscHome tw="h-4 w-4 mr-2" />
           首頁
         </Link>
       </li>
-      {path.length == 2 && <BreadcrumbItem>{path[0]}</BreadcrumbItem>}
-      {/* {<BreadcrumbItem>{path.at(-1)}</BreadcrumbItem>} */}
+      {path.map(p => (
+        <BreadcrumbItem>{p}</BreadcrumbItem>
+      ))}
     </ol>
   </div>
 );

@@ -6,19 +6,33 @@
           {
             "text": "服務單位",
             "colSpan": "",
-            "textColor": ""
+            "rowSpan": "",
+            "bold": "",
+            "fontSize": "xl",
+            "fontColor": "white",
+            "color": ""
           },
           {
-            "text": "姓名/職稱"
+            "text": "姓名/職稱",
+            "fontSize": "xl",
+            "fontColor": "white"
           }
         ],
-        "color": "secondary"
+        "color": "gray-800"
       }
     ],
     "tbody": [
       {
         "details": [
-          { "text": "中華民國金融監督管理委員會", "colSpan": "" },
+          {
+            "text": "中華民國金融監督管理委員會",
+            "colSpan": "",
+            "rowSpan": "",
+            "bold": "",
+            "fontSize": "",
+            "fontColor": "",
+            "color": ""
+          },
           { "text": "蔡福隆 處長" }
         ],
         "color": ""
