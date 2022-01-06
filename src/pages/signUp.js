@@ -12,8 +12,8 @@ const StyledList = tw.li`mb-3 text-lg`;
 const StyledUl = tw.ul`list-inside list-none`;
 const Emphasis = tw.span`text-primary`;
 
-const StyledTd = tw.td`py-1 px-1 border-2 border-gray-500 text-lg md:py-4 md:px-6`;
-const StyledTh = tw.th`py-1 px-1 border-2 border-gray-500 text-lg md:py-4 md:px-6`;
+const StyledTd = tw.td`py-1 px-1 border border-gray-500 text-lg md:py-4 md:px-6`;
+const StyledTh = tw.th`py-1 px-1 border border-gray-500 text-lg font-medium md:py-4 md:px-6`;
 
 const SignUpPage = () => (
   <Page title="活動報名">
@@ -51,9 +51,13 @@ const SignUpPage = () => (
             <StyledTh>報名截止</StyledTh>
             <StyledTd>
               即日起至2022年1月10日(一)
-              <br />
-              <Emphasis tw="text-secondary">
+              <Emphasis tw="block text-secondary">
                 課程人數：線上80名、實體50名，額滿為止！
+              </Emphasis>
+              <Emphasis tw="inline-block mt-1 pt-1 border-t border-dashed border-gray-500 text-red-600">
+                ★線上報名人數已超額，暫時無開放線上名額，敬請見諒！
+                <br />
+                如欲參加研習營，敬請報名實體課程，謝謝！
               </Emphasis>
             </StyledTd>
           </tr>
