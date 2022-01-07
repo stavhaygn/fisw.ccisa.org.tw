@@ -35,6 +35,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: `news`,
+        path: `${__dirname}/news`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         include: `${__dirname}/src/assets/`,
