@@ -7,15 +7,21 @@ import tw, { css } from 'twin.macro';
 import Page from '../../components/layout/Page';
 import Column from '../../components/Column';
 import SubTitle from '../../components/SubTitle';
+import { VscCalendar } from 'react-icons/vsc';
 
 const NewsPage = ({ data }) => (
   <Page title="最新消息">
     <Column>
-      <SubTitle>
-        {data.mdx.frontmatter.title}{' '}
-        <span tw="text-lg">{data.mdx.frontmatter.date}</span>
-      </SubTitle>
-      <MDXRenderer>{data.mdx.body}</MDXRenderer>
+      <header tw="inline-flex justify-between mb-5 pb-2 border-b ">
+        <SubTitle tw="py-0 mb-0">{data.mdx.frontmatter.title} </SubTitle>
+        <span tw="inline-flex items-center text-base text-gray-500">
+          <VscCalendar tw="mr-2" />
+          {data.mdx.frontmatter.date}
+        </span>
+      </header>
+      <section tw="text-lg">
+        <MDXRenderer>{data.mdx.body}</MDXRenderer>
+      </section>
     </Column>
   </Page>
 );
