@@ -23,7 +23,7 @@ const TableDetail = ({
   return (
     <Detail
       css={[
-        tw`py-1 px-1 border border-gray-700 text-center text-lg font-medium md:py-4 md:px-6`,
+        tw`py-1 px-1 border border-gray-700 text-center text-base font-medium md:py-4 md:px-6 md:text-lg`,
         colors[color],
         bold && tw`font-bold`,
         fontColors[fontColor],

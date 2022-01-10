@@ -8,7 +8,9 @@ import Container from '../Container';
 import BreadCrumb from '../BreadCrumb';
 
 const Title = ({ children }) => (
-  <h1 tw="text-4xl block my-2 text-center md:my-6 md:text-6xl">{children}</h1>
+  <h1 tw="text-4xl block mt-1 mb-4 text-center md:my-6 md:text-6xl">
+    {children}
+  </h1>
 );
 
 const Page = ({ children, title, description }) => (

@@ -6,6 +6,7 @@ import Layout from '../components/layout/Layout';
 import Seo from '../components/Seo';
 import Container from '../components/Container';
 import Banner from '../assets/Banner.svg';
+import MobileBanner from '../assets/MobileBanner.svg';
 import CCISA from '../assets/CCISA.svg';
 import Column from '../components/Column';
 import Row from '../components/Row';
@@ -40,7 +41,10 @@ const ScrollDown = () => (
 const IndexPage = () => (
   <Layout dark>
     <Seo title="首頁" />
-    <div tw="relative">
+    <div tw="block md:hidden">
+      <MobileBanner tw="w-full" viewBox="0 20 411 360" />
+    </div>
+    <div tw="hidden relative md:block">
       <Banner tw="w-full" viewBox="130 -7 1660 820" />
       <BlankA
         css={[
@@ -53,7 +57,7 @@ const IndexPage = () => (
         href="https://docs.google.com/forms/d/e/1FAIpQLSc9uG0jtzjETkFry1dcmFJoPJrJEbH2JR30tWs2papQwKjMdQ/viewform"
       />
     </div>
-    <div tw="relative">
+    <div tw="hidden relative xl:block">
       <a href="#about">
         <ScrollDown />
       </a>
@@ -82,24 +86,24 @@ const IndexPage = () => (
       />
     </div>
     <Container>
-      <Column>
+      <Column tw="mb-6">
         <Row>
           <div tw="hidden md:block md:w-2/5">
             <CCISA tw="w-3/5 mx-auto" />
           </div>
           <div tw="w-full md:w-3/5 md:text-lg md:pl-6" id="about">
-            <h1 tw="text-center text-2xl md:py-3 md:text-left md:text-3xl ">
+            <h1 tw="py-4 text-center text-3xl md:text-left">
               — 活動緣起與目的 —
             </h1>
             <ul tw="pl-6 list-disc">
-              <li tw="pb-3">
-                <h2 tw="pb-2 text-2xl">活動目的：</h2>
+              <li tw="mb-3">
+                <h2 tw="mb-2 text-2xl">活動目的：</h2>
                 <p>
                   中華民國資訊安全學會為協助大學財金、資工、資管及資訊類相關背景學生對於金融產業的認識及瞭解資安的實務運用，藉由整合產業的力量，舉辦此研習營以協助學生能夠於在校期間認識金融資安的工作，同時建立產業與學界共同合作的機制。
                 </p>
               </li>
               <li>
-                <h2 tw="pb-2 text-2xl">活動對象：</h2>
+                <h2 tw="mb-2 text-2xl">活動對象：</h2>
                 <p>
                   全國各公私立大學與科技院校財金、資工、資管、資訊類相關科系及碩博士在校學生。(結業後頒發研習證書)
                 </p>

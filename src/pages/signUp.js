@@ -8,12 +8,12 @@ import SubTitle from '../components/SubTitle';
 import BlankA from '../components/BlankA';
 import PageBanner from '../components/PageBanner';
 
-const StyledList = tw.li`mb-3 text-lg`;
+const StyledList = tw.li`mb-2 text-base md:mb-3 md:text-lg`;
 const StyledUl = tw.ul`list-inside list-none`;
 const Emphasis = tw.span`text-primary`;
 
-const StyledTd = tw.td`py-1 px-1 border border-gray-500 text-lg md:py-4 md:px-6`;
-const StyledTh = tw.th`py-1 px-1 border border-gray-500 text-lg font-medium md:py-4 md:px-6`;
+const StyledTd = tw.td`py-1 px-1 border border-gray-500 text-base md:py-4 md:px-6 md:text-lg`;
+const StyledTh = tw.th`py-1 px-1 border border-gray-500 text-base font-medium md:py-4 md:px-6 md:text-lg`;
 
 const SignUpPage = () => (
   <Page title="活動報名">
@@ -39,7 +39,7 @@ const SignUpPage = () => (
           (二)上傳其它有利於審查之資料。方可完成報名程序。
         </StyledList>
       </StyledUl>
-      <p tw="text-lg">
+      <p tw="text-base md:text-lg">
         ※經報名資料審核程序，將於2022年1月13日(四)於活動網站，公告審查報名通過之活動錄取名單，即可參加活動。
       </p>
     </Column>
@@ -70,7 +70,9 @@ const SignUpPage = () => (
     </Column>
     <Column>
       <SubTitle>報名費用</SubTitle>
-      <Emphasis tw="text-xl">本活動採網路報名，無須繳交報名費用。</Emphasis>
+      <Emphasis tw="text-base md:text-xl">
+        本活動採網路報名，無須繳交報名費用。
+      </Emphasis>
     </Column>
     <Column>
       <StyledUl

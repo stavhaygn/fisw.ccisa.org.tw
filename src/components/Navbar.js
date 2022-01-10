@@ -26,7 +26,7 @@ const DropdownDiv = tw.div`block w-auto px-0 text-base list-none bg-dark rounded
 
 const Hamburger = memo(({ onClick }) => (
   <button tw="p-2 ml-3 2xl:hidden" onClick={onClick}>
-    <VscMenu tw="w-6 h-6" />
+    <VscMenu tw="w-6 h-6 text-white" />
   </button>
 ));
 

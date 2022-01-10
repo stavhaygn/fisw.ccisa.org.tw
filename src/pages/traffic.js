@@ -9,7 +9,7 @@ import SubTitle from '../components/SubTitle';
 import Material4 from '../assets/Material4.svg';
 
 const SplitLineTitle = ({ children }) => (
-  <div tw="relative mb-3 border-b border-black">
+  <div tw="relative mb-1 border-b border-black md:mb-3">
     <Material4
       css={[
         tw`absolute w-8`,
@@ -19,24 +19,24 @@ const SplitLineTitle = ({ children }) => (
         `,
       ]}
     />
-    <h3 tw="text-2xl">{children}</h3>
+    <h3 tw="text-xl md:text-2xl">{children}</h3>
   </div>
 );
 
 const VehicleSection = ({ children, vehicle }) => (
-  <Column tw="py-3 ">
+  <Column tw="py-1 mb-3 md:py-3 md:mb-0">
     <SplitLineTitle>{vehicle}</SplitLineTitle>
     {children}
   </Column>
 );
 
-const StyledList = tw.li`mb-3 text-lg`;
+const StyledList = tw.li`mb-1 text-base md:mb-3 md:text-lg`;
 
 const trafficPage = () => (
   <Page title="交通資訊">
     <Column>
       <SubTitle>活動地點</SubTitle>
-      <p tw="text-lg">
+      <p tw="text-base md:text-lg">
         國立臺灣科技大學(臺北市大安區基隆路4 段 43 號)
         <br />
         綜合研究大樓一樓(RB-102 國際會議廳)

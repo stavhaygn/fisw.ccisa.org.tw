@@ -3,18 +3,18 @@ import React from 'react';
 import { jsx } from '@emotion/react';
 import { Link, graphql } from 'gatsby';
 import tw, { css } from 'twin.macro';
-
+import { isMobile } from 'react-device-detect';
 import Page from '../../components/layout/Page';
 import Column from '../../components/Column';
 import Table from '../../components/Table';
 
 const DateButtonGroup = ({ selectedDay, nodes = [] }) => (
-  <div tw="inline-flex my-4">
+  <div tw="inline-flex w-full mt-2 mb-4 justify-between md:w-min md:mb-6">
     {nodes.map(({ date, text, day, linkColor }) => (
       <>
         <Link
           css={[
-            tw`inline-flex items-center py-2 px-4 mx-3 mb-3 rounded-lg text-lg border-2 md:text-2xl`,
+            tw`inline-flex items-center py-1 px-4 rounded-lg text-lg border-2 md:text-2xl md:py-2 md:mx-3`,
             css`
               color: ${linkColor};
               color: black;
@@ -29,8 +29,8 @@ const DateButtonGroup = ({ selectedDay, nodes = [] }) => (
           ]}
           to={`../${date}`}
         >
-          <h2>{text}</h2>
-          <span tw="text-base">{day}</span>
+          <h2>{isMobile ? text.slice(4) : text}</h2>
+          <span tw="text-sm md:text-base">{day}</span>
         </Link>
       </>
     ))}

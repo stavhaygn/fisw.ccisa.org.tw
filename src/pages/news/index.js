@@ -14,12 +14,12 @@ const NewsPage = ({ data }) => (
       {data.allMdx.nodes.map(node => (
         <article>
           <Link to={node.slug}>
-            <Column tw="pb-8">
-              <span tw="inline-flex items-center mb-1 text-base text-gray-500">
+            <Column tw="pb-4 md:pb-8">
+              <span tw="inline-flex items-center text-sm text-gray-500 md:mb-1 md:text-base">
                 <VscCalendar tw="mr-2" />
                 {node.frontmatter.date}
               </span>
-              <SubTitle>{node.frontmatter.title}</SubTitle>
+              <SubTitle tw="mb-0 md:mb-3">{node.frontmatter.title}</SubTitle>
               {node.excerpt}
             </Column>
           </Link>

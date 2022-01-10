@@ -14,12 +14,12 @@ const NewsPage = ({ data }) => (
     <Column>
       <header tw="inline-flex justify-between mb-5 pb-2 border-b ">
         <SubTitle tw="py-0 mb-0">{data.mdx.frontmatter.title} </SubTitle>
-        <span tw="inline-flex items-center text-base text-gray-500">
+        <span tw="inline-flex items-center text-sm text-gray-500 md:text-base">
           <VscCalendar tw="mr-2" />
           {data.mdx.frontmatter.date}
         </span>
       </header>
-      <section tw="text-lg">
+      <section tw="text-base md:text-lg">
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
       </section>
     </Column>

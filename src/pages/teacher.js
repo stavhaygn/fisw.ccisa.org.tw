@@ -9,7 +9,7 @@ import SubTitle from '../components/SubTitle';
 import Table from '../components/Table';
 import PageBanner from '../components/PageBanner';
 
-const StyledList = tw.li`text-center mb-3 text-lg`;
+const StyledList = tw.li`text-center mb-1 text-base md:mb-3 md:text-lg`;
 
 const TeacherPage = ({ data }) => (
   <Page title="師資陣容">

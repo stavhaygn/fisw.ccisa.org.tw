@@ -5,12 +5,12 @@ import tw from 'twin.macro';
 import BlankA from './BlankA';
 
 const Footer = () => (
-  <footer tw="flex flex-col items-center w-auto border-t-2 border-light bg-dark text-white md:py-10 md:mt-16">
-    <p tw="text-lg">
+  <footer tw="flex flex-col items-center py-6 w-auto bg-dark text-white md:py-10 md:mt-16 md:border-t-2 md:border-light">
+    <p tw="text-base md:text-lg">
       <a href="mailto:secretary@ccisa.org.tw">secretary@ccisa.org.tw</a>{' '}
       Copyright &copy; 2022
     </p>
-    <p tw="text-lg">
+    <p tw="text-base md:text-lg">
       <BlankA tw="text-light" href="https://www.ccisa.org.tw/">
         中華民國資訊安全學會
       </BlankA>{' '}
