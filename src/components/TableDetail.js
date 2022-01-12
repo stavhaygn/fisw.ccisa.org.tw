@@ -11,6 +11,7 @@ const WrapperTh = ({ children, ...props }) => <th {...props}>{children}</th>;
 const WrapperTd = ({ children, ...props }) => <td {...props}>{children}</td>;
 
 const TableDetail = ({
+  children,
   th,
   color,
   text,
@@ -20,6 +21,7 @@ const TableDetail = ({
   ...props
 }) => {
   const Detail = th ? WrapperTh : WrapperTd;
+  text = text || children;
   return (
     <Detail
       css={[

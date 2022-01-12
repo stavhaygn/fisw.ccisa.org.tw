@@ -46,7 +46,7 @@ const IndexPage = () => (
     </div>
     <div tw="hidden relative md:block">
       <Banner tw="w-full" viewBox="130 -7 1660 820" />
-      <BlankA
+      <a
         css={[
           tw`absolute w-1/6 h-1/6`,
           css`
@@ -54,7 +54,7 @@ const IndexPage = () => (
             left: 41.5%;
           `,
         ]}
-        href="https://docs.google.com/forms/d/e/1FAIpQLSc9uG0jtzjETkFry1dcmFJoPJrJEbH2JR30tWs2papQwKjMdQ/viewform"
+        href="/admission-list/physical-for-all"
       />
     </div>
     <div tw="hidden relative xl:block">
