@@ -12,7 +12,7 @@ import { VscCalendar } from 'react-icons/vsc';
 const NewsPage = ({ data }) => (
   <Page title="最新消息">
     <Column>
-      <header tw="inline-flex justify-between mb-5 pb-2 border-b ">
+      <header tw="inline-flex justify-between mt-2 mb-5 pb-2 border-b ">
         <SubTitle tw="py-0 mb-0">{data.mdx.frontmatter.title} </SubTitle>
         <span tw="inline-flex items-center text-sm text-gray-500 md:text-base">
           <VscCalendar tw="mr-2" />
