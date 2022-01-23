@@ -1,0 +1,26 @@
+{
+  "text": "111/01/18 上午場",
+  "speeches": [
+    {
+      "topic": "金融資安的發展現況",
+      "lecturer": "蔡福隆 處長",
+      "organization": "中華民國金融監督管理委員會",
+      "link": "/slides/0118上午場/01-金融資安的發展現況_蔡福隆處長.pdf",
+      "image": "../../images/slides/0118-morning_01.png"
+    },
+    {
+      "topic": "金融徵信與安全",
+      "lecturer": "鄭祺耀 副總經理",
+      "organization": "財團法人金融聯合徵信中心",
+      "link": "/slides/0118上午場/02-金融徵信與安全_鄭祺耀副總.pdf",
+      "image": "../../images/slides/0118-morning_02.png"
+    },
+    {
+      "topic": "銀行業對加密的實際運用",
+      "lecturer": "徐銘宏 副總經理",
+      "organization": "台北富邦銀行股份有限公司",
+      "link": "/slides/0118上午場/03-銀行業對加密的實際運用_富邦徐銘宏副總.pdf",
+      "image": "../../images/slides/0118-morning_03.png"
+    }
+  ]
+}

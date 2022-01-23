@@ -1,0 +1,26 @@
+{
+  "text": "111/01/19 上午場",
+  "speeches": [
+    {
+      "topic": "數位貨幣的隱私強化技術與挑戰",
+      "lecturer": "左瑞麟 教授",
+      "organization": "國立政治大學資訊科學系",
+      "link": "/slides/0119上午場/01-數位貨幣隱私技術與挑戰_左瑞麟教授.pdf",
+      "image": "../../images/slides/0119-morning_01.png"
+    },
+    {
+      "topic": "AI 及金融交易資訊安全",
+      "lecturer": "李嘉銘 資安專家",
+      "organization": "",
+      "link": "/slides/0119上午場/02-AI及金融交易資訊安全_星展李嘉銘.pdf",
+      "image": "../../images/slides/0119-morning_02.png"
+    },
+    {
+      "topic": "雲端安全實務介紹",
+      "lecturer": "鄭家明 顧問",
+      "organization": "Google-美商科高國際有限公司",
+      "link": "/slides/0119上午場/03-Security on Google Cloud_鄭家明.pdf",
+      "image": "../../images/slides/0119-morning_03.png"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "text": "111/01/18 下午場",
+  "speeches": [
+    {
+      "topic": "NFT 數位資產安全",
+      "lecturer": "林詠章 教授",
+      "organization": "國立中興大學資訊管理學系",
+      "link": "/slides/0118下午場/04-NFT數位資產安全_林詠章教授.pdf",
+      "image": "../../images/slides/0118-afternoon_04.png"
+    },
+    {
+      "topic": "開放銀行資通安全風險評鑑",
+      "lecturer": "魏銪志 教授",
+      "organization": "國立臺北科技大學資訊與財金管理系",
+      "link": "/slides/0118下午場/06-開放銀行資訊安全風險評鑑_魏銪志教授.pdf",
+      "image": "../../images/slides/0118-afternoon_06.png"
+    }
+  ]
+}
