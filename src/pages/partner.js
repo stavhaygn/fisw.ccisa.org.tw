@@ -11,9 +11,9 @@ import SubTitle from '../components/SubTitle';
 import BlankA from '../components/BlankA';
 import PageBanner from '../components/PageBanner';
 
-const PartnerCard = ({ name, image, href }) => (
+const PartnerCard = ({ name, image, link }) => (
   <div tw="w-full my-4 mx-auto md:max-w-xs md:mx-0">
-    <BlankA href={href}>
+    <BlankA href={link}>
       {/* wait for twin update to tailwindcss v3, otherwise drop-shadow(--tw-drop-shadow) is not working*/}
       <GatsbyImage
         tw="border p-2 rounded-md mb-3 md:p-0"
