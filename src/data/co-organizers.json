@@ -1,5 +1,10 @@
 [
   {
+    "name": "國立中山大學資訊安全研究中心",
+    "image": "../images/partners/isrc.png",
+    "link": "https://isrc.nsysu.edu.tw/"
+  },
+  {
     "name": "普鴻資訊",
     "image": "../images/partners/provision.png",
     "link": "https://www.provision.com.tw/"
@@ -12,7 +17,7 @@
   {
     "name": "財團法人金融聯合徵信中心",
     "image": "../images/partners/jcic.png",
-    "link": "https://ccisa.org.tw/"
+    "link": "https://www.jcic.org.tw/"
   },
   {
     "name": "Google",

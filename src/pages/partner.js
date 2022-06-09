@@ -12,7 +12,7 @@ import BlankA from '../components/BlankA';
 import PageBanner from '../components/PageBanner';
 
 const PartnerCard = ({ name, image, link }) => (
-  <div tw="w-full my-4 mx-auto md:max-w-xs md:mx-0">
+  <div tw="w-full my-4 mx-auto md:max-w-xs md:mx-4">
     <BlankA href={link}>
       {/* wait for twin update to tailwindcss v3, otherwise drop-shadow(--tw-drop-shadow) is not working*/}
       <GatsbyImage
@@ -36,7 +36,7 @@ const PartnerPage = ({ data }) => {
         <SubTitle tw="mt-2 mb-0 text-center text-3xl md:mt-0 md:mb-1">
           主辦單位
         </SubTitle>
-        <Row tw="md:justify-center md:space-x-10">
+        <Row tw="md:justify-center">
           {allOrganizersJson.nodes.map(node => (
             <PartnerCard {...node} key={node.name} />
           ))}
@@ -44,9 +44,9 @@ const PartnerPage = ({ data }) => {
       </Column>
       <Column tw="pb-0">
         <SubTitle tw="mb-0 text-center text-3xl md:mb-1">
-          主辦單位<span tw="block text-sm text-center">(依場次順序排列)</span>{' '}
+          協辦單位<span tw="block text-sm text-center">(依場次順序排列)</span>{' '}
         </SubTitle>
-        <Row tw="md:justify-center md:space-x-10">
+        <Row tw="md:justify-center">
           {allCoOrganizersJson.nodes.map(node => (
             <PartnerCard {...node} key={node.name} />
           ))}

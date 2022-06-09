@@ -24,6 +24,7 @@ const TeacherPage = ({ data }) => (
     <Column>
       <SubTitle tw="text-center">協辦單位</SubTitle>
       <ul>
+        <StyledList>國立中山大學資訊安全研究中心</StyledList>
         <StyledList>普鴻資訊股份有限公司</StyledList>
       </ul>
     </Column>
