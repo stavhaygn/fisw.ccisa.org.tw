@@ -45,7 +45,7 @@ const IndexPage = () => (
       <MobileBanner tw="w-full" viewBox="0 20 411 360" />
     </div>
     <div tw="hidden relative md:block">
-      <Banner tw="w-full" viewBox="130 -7 1660 820" />
+      <Banner tw="w-full" />
       <a
         css={[
           tw`absolute w-1/6 h-1/6`,

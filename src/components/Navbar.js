@@ -14,7 +14,7 @@ const Nav = tw.nav`fixed top-0 left-0 right-0 z-50 py-3 bg-dark`;
 
 const Container = tw(
   _Container,
-)`xl:w-11/12 flex flex-wrap justify-between items-center`;
+)`flex flex-wrap justify-between items-center xl:w-4/5`;
 
 const NavLink = tw(
   Link,
