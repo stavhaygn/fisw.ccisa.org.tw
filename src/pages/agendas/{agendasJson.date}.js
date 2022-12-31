@@ -47,7 +47,7 @@ const AgendaPage = ({ data }) => (
       <Table {...data.agendasJson} />
       <a
         tw="mt-6 py-2 px-3 border-2 border-black rounded-lg text-white text-lg bg-[#AA4DB2] hover:scale-105"
-        href="/documents/fisw2022_agenda.pdf"
+        href="/documents/fisw2023_agenda.pdf"
         download
       >
         金融資安研習營議程PDF下載 📄
