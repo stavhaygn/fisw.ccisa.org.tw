@@ -18,13 +18,12 @@ const TeacherPage = ({ data }) => (
       <SubTitle tw="text-center">主辦單位</SubTitle>
       <ul>
         <StyledList>中華民國資訊安全學會</StyledList>
-        <StyledList>國立臺灣科技大學管理學院</StyledList>
+        <StyledList>國立臺北科技大學</StyledList>
       </ul>
     </Column>
     <Column>
       <SubTitle tw="text-center">協辦單位</SubTitle>
       <ul>
-        <StyledList>國立中山大學資訊安全研究中心</StyledList>
         <StyledList>普鴻資訊股份有限公司</StyledList>
       </ul>
     </Column>
