@@ -3,7 +3,7 @@ import React from 'react';
 import { jsx } from '@emotion/react';
 import tw, { css } from 'twin.macro';
 import parse from 'html-react-parser';
-import colors from './Colors';
+import colors from './colors';
 import fontColors from './FontColors';
 import fontSizes from './FontSizes';
 

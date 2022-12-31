@@ -3,7 +3,7 @@ import React from 'react';
 import { jsx } from '@emotion/react';
 import tw, { css } from 'twin.macro';
 import TableDetail from './TableDetail';
-import colors from './Colors';
+import colors from './colors';
 
 const TableRow = ({ color, headers = [], details = [], ...props }) => (
   <tr css={[colors['dark'], colors[color]]} {...props}>
