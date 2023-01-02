@@ -46,7 +46,7 @@ const PartnerPage = ({ data }) => {
         <SubTitle tw="mb-0 text-center text-3xl md:mb-1">
           協辦單位<span tw="block text-sm text-center">(依場次順序排列)</span>{' '}
         </SubTitle>
-        <Row tw="md:justify-center">
+        <Row tw="md:px-16 md:justify-center">
           {allCoOrganizersJson.nodes.map(node => (
             <PartnerCard {...node} key={node.name} />
           ))}

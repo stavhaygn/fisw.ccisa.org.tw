@@ -20,14 +20,19 @@
     "link": "https://www.jcic.org.tw/"
   },
   {
-    "name": "Google",
-    "image": "../images/partners/google.png",
-    "link": "https://www.google.com.tw/"
+    "name": "新光金控",
+    "image": "../images/partners/skl.png",
+    "link": "https://www.skfh.com.tw/"
   },
   {
-    "name": "財金資訊股份有限公司",
-    "image": "../images/partners/fisc.png",
-    "link": "https://www.fisc.com.tw/TC"
+    "name": "兆豐國際商業銀行",
+    "image": "../images/partners/megabank.png",
+    "link": "https://www.megabank.com.tw/personal"
+  },
+  {
+    "name": "臺灣中小企業銀行",
+    "image": "../images/partners/tbb.png",
+    "link": "https://www.tbb.com.tw/"
   },
   {
     "name": "財宏科技",
