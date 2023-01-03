@@ -29,16 +29,9 @@ const SlidesCard = ({ topic, organization, lecturer, link, image }) => (
 
 const SlidesPage = ({ data }) => (
   <Page title="簡報下載">
-    {data.allSlidesJson.nodes.map(node => (
-      <Column>
-        <SubTitle>{node.text}</SubTitle>
-        <Row tw="md:space-x-10">
-          {node.speeches.map(speech => (
-            <SlidesCard {...speech}></SlidesCard>
-          ))}
-        </Row>
-      </Column>
-    ))}
+   <Column tw="items-center">
+      <SubTitle>待研習營課程結束後上傳</SubTitle>
+    </Column>
   </Page>
 );
 
