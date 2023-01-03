@@ -39,22 +39,31 @@ const SignUpPage = () => (
         </StyledList>
       </StyledUl>
       <p tw="text-base md:text-lg">
-      ※經報名資料審核程序，將於2023年2月3日(五)公告於活動網站，公告審查報名通過之活動錄取名單，即可參加活動。
+        ※經報名資料審核程序，將於2023年2月3日(五)公告於活動網站，公告審查報名通過之活動錄取名單，即可參加活動。
       </p>
     </Column>
     <Column>
       <SubTitle>報名時程</SubTitle>
-      <table tw="max-w-2xl text-lg ">
+      <table tw="max-w-5xl text-lg ">
         <tbody>
           <tr>
             <StyledTh>報名截止</StyledTh>
             <StyledTd>
               即日起至2023年1月16日(一)
+              <br />
+              課程人數：
+              <Emphasis tw="block text-secondary">實體50名 (限學生)</Emphasis>
               <Emphasis tw="block text-secondary">
-                課程人數：線上50名學生 & 30名銀行相關領域專業人士、實體50名，額滿為止！
+                線上50名學生 (開放選填：新竹(含)以南地區)
+              </Emphasis>
+              <Emphasis tw="block text-secondary">
+                線上30名教授及銀行相關領域之專業人士，額滿為止！
+              </Emphasis>
+              <Emphasis tw="block text-secondary">
+                (線上課程網址：將於活動前3天公告)。
               </Emphasis>
               <Emphasis tw="inline-block mt-1 pt-1 border-t border-dashed border-gray-500 text-red-600">
-                ★研習證書：兩日實體課程確實簽到結業者，結訓即頒發結業證書；線上參與者，請恕無法提供結業證書 (線上課程網址：將於活動前3天公告)。
+                ★研習證書：研習課程約540分鐘，完成兩日研習課程並確實簽到者，結訓即頒發結業證書。
               </Emphasis>
             </StyledTd>
           </tr>
@@ -78,9 +87,8 @@ const SignUpPage = () => (
         `}
       >
         <StyledList>
-          研習課程約540分鐘，實體完成研習課程者，將頒發結業研習證書。
+          實體課程結業並確實兩日簽到者，可參與「摸彩」活動
         </StyledList>
-        <StyledList>實體課程結業並確實兩日簽到者，可參與「摸彩」活動</StyledList>
         <StyledUl
           css={[
             tw`pl-4`,
@@ -90,7 +98,8 @@ const SignUpPage = () => (
           ]}
         >
           <StyledList>
-            活動結束前，將於現場抽出6名幸運兒，送出價值$7,490 AirPods Pro(第二代)乙台、價值$3,000 HomePod mini 三台、價值$990 AirTag 2個
+            活動結束前，將於現場抽出6名幸運兒，送出價值$7,490 AirPods
+            Pro(第二代)乙台、價值$3,000 HomePod mini 三台、價值$990 AirTag 2個
           </StyledList>
         </StyledUl>
       </StyledUl>
