@@ -11,28 +11,8 @@ import SubTitle from '../components/SubTitle';
 
 const ScenePage = ({ data }) => (
   <Page title="活動花絮">
-    <Column>
-      <Slideshow
-        tw="mx-auto"
-        images={data.allFeaturedPhotosJson.nodes[0].photos}
-      />
-    </Column>
-    <Column tw="mt-4">
-      <Row tw="md:w-4/5 md:mx-auto md:justify-center">
-        {data.allFeaturedPhotosWithTopicJson.nodes.map((node, index) => (
-          <Column tw="mb-4 md:mx-4" key={`scene-${index}`}>
-            <Slideshow
-              tw="md:max-w-xs"
-              link={node.link}
-              images={node.photos}
-              dots={false}
-            />
-            <SubTitle tw="text-xl text-center md:text-2xl">
-              {node.topic}
-            </SubTitle>
-          </Column>
-        ))}
-      </Row>
+    <Column tw="items-center">
+      <SubTitle>待研習營課程結束後上傳</SubTitle>
     </Column>
   </Page>
 );
