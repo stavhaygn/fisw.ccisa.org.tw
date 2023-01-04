@@ -50,11 +50,11 @@ const IndexPage = () => (
         css={[
           tw`absolute w-1/6 h-1/6`,
           css`
-            top: 41.5%;
-            left: 41.5%;
+            top: 52.5%;
+            left: 38.1%;
           `,
         ]}
-        href="/admission-list/physical-for-all"
+        href="/sign-up"
       />
     </div>
     <div tw="hidden relative xl:block">
