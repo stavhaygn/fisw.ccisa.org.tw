@@ -38,29 +38,30 @@ const trafficPage = () => (
     </Column>
     <Column>
       <SubTitle>集思北科大會議中心交通資訊圖</SubTitle>
-        <StaticImage layout="fixed" src="../images/ntut.png" alt="NTUT location" />
+      <StaticImage
+        tw="md:max-w-5xl"
+        src="../images/ntut.png"
+        alt="NTUT location"
+      />
     </Column>
     <Column>
       <SubTitle>交通方式</SubTitle>
       <VehicleSection vehicle="開車 🚗">
         <ol tw="list-inside">
-          <StyledList>
-            建國南北快速道路
-          </StyledList>
+          <StyledList>建國南北快速道路</StyledList>
           <ol tw="list-none pl-4">
             <StyledList>
               由北往南：建國南路1段與忠孝東路3段口下匝道後左轉。
             </StyledList>
-            <StyledList>
-              由南往北：辛亥路與建國南路口下匝道直行。
-            </StyledList>
+            <StyledList>由南往北：辛亥路與建國南路口下匝道直行。</StyledList>
           </ol>
         </ol>
       </VehicleSection>
       <VehicleSection vehicle="公車 🚌">
         <ul>
           <StyledList>
-            正義郵局站 (走路約2分鐘)：1813支線、1815、212、232副、232正、262(含區間車)、299、605、919、忠孝新幹線。
+            正義郵局站
+            (走路約2分鐘)：1813支線、1815、212、232副、232正、262(含區間車)、299、605、919、忠孝新幹線。
           </StyledList>
         </ul>
       </VehicleSection>
