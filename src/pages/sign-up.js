@@ -32,7 +32,7 @@ const SignUpPage = () => (
           <BlankA href="https://docs.google.com/forms/d/e/1FAIpQLSdyzpW7WMHshe7mW7jPdGst13QeLXPXYbbNKGevWdtilG5m1g/viewform">
             <Emphasis>「實體課程」</Emphasis>
           </BlankA>
-          地點為集思北科會議中心二樓 (貝塔廳)，填寫個人資料表單。
+          地點為集思北科大會議中心二樓 (貝塔廳)，填寫個人資料表單。
         </StyledList>
         <StyledList>
           (二)上傳其它有利於審查之資料。方可完成報名程序。
