@@ -18,7 +18,7 @@ const ScrollDown = () => (
     css={[
       tw`absolute inset-x-2/4 w-10 h-10 border-l-2 border-b-2 border-white -rotate-45 box-border`,
       css`
-        top: -13rem;
+        top: -8rem;
         animation: ${keyframes`
       0% {
         transform: rotate(-45deg) translate(0, 0);
@@ -42,7 +42,7 @@ const IndexPage = () => (
   <Layout dark>
     <Seo title="首頁" />
     <div tw="block md:hidden">
-      <MobileBanner tw="w-full" viewBox="0 20 411 360" />
+      <MobileBanner tw="w-full" />
     </div>
     <div tw="hidden relative md:block">
       <Banner tw="w-full" />
@@ -86,7 +86,7 @@ const IndexPage = () => (
       />
     </div>
     <Container>
-      <Column tw="mb-6">
+      <Column tw="mt-8 mb-6">
         <Row>
           <div tw="hidden md:block md:w-2/5">
             <CCISA tw="w-3/5 mx-auto" />

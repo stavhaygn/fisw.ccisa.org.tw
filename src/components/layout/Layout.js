@@ -21,8 +21,16 @@ const customStyles = {
     }
     body {
       margin-top: 4.75rem;
-      background-image: linear-gradient(to right, #231815, transparent 105%),
-        linear-gradient(to right, #231815, #161098);
+      background-color: black;
+      background-repeat: no-repeat;
+      background-image: url('/mobileBackground.png');
+      background-size: contain;
+    }
+    @media (min-width: 768px) {
+      body {
+        background-image: url('/background.png');
+        background-size: cover;
+      }
     }
   `,
 };

@@ -5,7 +5,7 @@ import tw from 'twin.macro';
 import BlankA from './BlankA';
 
 const Footer = () => (
-  <footer tw="flex flex-col items-center py-6 w-auto bg-dark text-white md:py-10 md:mt-16 md:border-t-2 md:border-light">
+  <footer tw="flex flex-col items-center py-6 w-auto bg-dark text-white md:py-10 md:mt-16">
     <p tw="text-base md:text-lg">
       <a href="mailto:secretary@ccisa.org.tw">secretary@ccisa.org.tw</a>{' '}
       Copyright &copy; 2022
