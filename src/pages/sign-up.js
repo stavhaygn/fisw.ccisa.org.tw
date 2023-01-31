@@ -52,15 +52,15 @@ const SignUpPage = () => (
               即日起至2023年1月16日(一)
               <br />
               課程人數：
-              <Emphasis tw="block text-secondary">實體50名 (限學生)</Emphasis>
+              <Emphasis tw="block text-secondary">實體50名：限學生</Emphasis>
               <Emphasis tw="block text-secondary">
-                線上50名學生 (開放選填：新竹(含)以南地區)
+                線上50名：1.學生：學校位於新竹(含)以南，外島及離島地區。&ensp;2.教授：地區不限
               </Emphasis>
               <Emphasis tw="block text-secondary">
-                線上30名教授及銀行相關領域之專業人士，額滿為止！
+                線上30名：銀行專業人士(已額滿)
               </Emphasis>
               <Emphasis tw="block text-secondary">
-                (線上課程網址：將於活動前3天公告)。
+                (線上課程網址：將於活動前3天公告)
               </Emphasis>
               <Emphasis tw="inline-block mt-1 pt-1 border-t border-dashed border-gray-500 text-red-600">
                 ★研習證書：研習課程約540分鐘，完成兩日研習課程並確實簽到者，結訓即頒發結業證書。

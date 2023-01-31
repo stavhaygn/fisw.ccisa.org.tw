@@ -46,7 +46,7 @@ const IndexPage = () => (
     </div>
     <div tw="hidden relative md:block">
       <Banner tw="w-full" />
-      <a
+      <BlankA
         css={[
           tw`absolute w-1/6 h-1/6`,
           css`
@@ -54,7 +54,7 @@ const IndexPage = () => (
             left: 38.1%;
           `,
         ]}
-        href="/sign-up"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdyzpW7WMHshe7mW7jPdGst13QeLXPXYbbNKGevWdtilG5m1g/viewform"
       />
     </div>
     <div tw="hidden relative xl:block">
@@ -107,7 +107,9 @@ const IndexPage = () => (
                 <p>
                   全國各公私立大學與科技院校財金/資工/資管及資訊類相關科系及碩士在校學生。
                 </p>
-                <p>※實體課程限學生參與；線上課程開放新竹(含)以南學生選填。</p>
+                <p>
+                  ※實體課程限學生參與；線上課程開放學校位於新竹(含)以南，外島及離島地區的學生選填。
+                </p>
                 <p>
                   ※部分課程亦歡迎教授及銀行相關領域專業人士報名參加線上課程。
                 </p>
