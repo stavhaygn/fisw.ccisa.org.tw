@@ -6,15 +6,15 @@ import tw, { css } from 'twin.macro';
 import Page from '../../components/layout/Page';
 import Column from '../../components/Column';
 import TableDetail from '../../components/TableDetail';
-import SubTitle from '../../components/SubTitle';
+import parse from 'html-react-parser';
 
 const ListButtonGroup = ({ nodes = [] }) => (
-  <div tw="inline-flex items-center w-full mt-2 mb-4 justify-between md:w-min md:mb-6">
-    {nodes.map(({ text, link, linkColor }, index) => (
+  <div tw="inline-flex flex-wrap w-full mt-2 mb-4 justify-center md:mb-6">
+    {nodes.map(({ group, link, linkColor }, index) => (
       <>
         <Link
           css={[
-            tw`inline-flex items-center py-1 px-1 text-xl md:text-2xl md:mx-3 hover:border-b`,
+            tw`py-1 px-1 text-xl md:text-2xl md:mx-3 hover:border-b`,
             css`
               border-color: ${linkColor};
             `,
@@ -29,7 +29,7 @@ const ListButtonGroup = ({ nodes = [] }) => (
               `,
             ]}
           >
-            {text}
+            {group}
           </h2>
         </Link>
         {index != nodes.length - 1 && <div tw="text-xl md:text-2xl">/</div>}
@@ -52,7 +52,38 @@ const chunk = (arr, len) => {
 const AdmissionListPage = ({ data }) => (
   <Page title="課程錄取名單">
     <Column tw="items-center">
-      <SubTitle>待2023年2月3日(五)公告</SubTitle>
+      <ListButtonGroup {...data.allAdmissionListJson} />
+      {data.admissionListJson.items.map((item, key) => (
+        <>
+          <table>
+            <thead>
+              <tr>
+                <TableDetail
+                  tw="pb-4 border-0 text-xl md:text-2xl"
+                  th
+                  colSpan="5"
+                >
+                  {`${item.name} ${item.participants.length} 人`}
+                </TableDetail>
+              </tr>
+            </thead>
+            <tbody>
+              {chunk(item.participants, 5).map(names => (
+                <tr>
+                  {names.map(name => (
+                    <TableDetail tw="px-3 border-0 md:px-10">
+                      {name}
+                    </TableDetail>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p tw="mt-6 mb-12 text-base text-center text-secondary whitespace-pre-line md:text-lg">
+            {parse(item.note)}
+          </p>
+        </>
+      ))}
     </Column>
   </Page>
 );
@@ -62,13 +93,15 @@ export default AdmissionListPage;
 export const query = graphql`
   query ($id: String) {
     admissionListJson(id: { eq: $id }) {
-      text
-      note
-      participants
+      items {
+        name
+        participants
+        note
+      }
     }
-    allAdmissionListJson(sort: { fields: link, order: DESC }) {
+    allAdmissionListJson(sort: { fields: order, order: ASC }) {
       nodes {
-        text
+        group
         link
         linkColor
       }
